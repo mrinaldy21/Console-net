@@ -4,14 +4,14 @@
     {
         while (true)
         {
-            Console.WriteLine("Masukan Angka : ");
+            Console.Write("Masukan Angka : ");
             string input = Console.ReadLine() ?? "";
 
             string getinput = new string(input.Where(char.IsDigit).ToArray());
 
             if (string.IsNullOrWhiteSpace(getinput))
             {
-                Console.WriteLine("input tidak valid, Masukan angka");
+                Console.WriteLine("Input Tidak Valid, Silakan Masukan Angka");
                 continue;
             }
 
@@ -23,7 +23,7 @@
             int difference = Math.Abs(number - reservenumber);
 
             Console.WriteLine($"Angka Inputan         : {number}");
-            Console.WriteLine($"Kebalikan angka input : {reservenumber}");
+            Console.WriteLine($"Kebalikan Angka Input : {reservenumber}");
             Console.WriteLine($"Selesih               : {difference}");
         }
     }
